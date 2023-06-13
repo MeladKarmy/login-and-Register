@@ -1,0 +1,559 @@
+:root
+{
+    --mainColor:rgb(28, 161, 241);
+    --backColor:rgba(20, 88, 131, 0.5);
+    --secandColor:rgb(255, 255, 255);
+    --blackColor:rgb(255, 255, 255);
+    --graybold: gray;
+    --grayColor:rgb(201, 198, 198);
+    --hello:#00ACee;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline-style: none;
+	text-decoration: none;
+}
+html {
+	font-size: 16px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+body
+{
+    background-color:var(--mainColor);
+    text-align: center;
+    transition: 2s;
+}
+.btn
+{
+    width: 70%;
+    background-color: var(--mainColor);
+    border-radius: 1rem;
+    border: none;
+    color: var(--secandColor);
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.7;
+    transition: 1s;
+}
+.btn2
+{
+    padding: .5rem;
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    border: none;
+    color: var(--secandColor);
+    font-size: 1rem;
+    font-weight: 400;
+    transition: 1s;
+    display: block;
+    transition: 1s;
+}
+.btn:hover
+{
+    background-color: var(--grayColor);
+    color: var(--hello);
+}
+.btn2:hover
+{
+    background-color: var(--grayColor);
+    color: var(--hello);
+}
+.container 
+{
+	/* margin-left: 15px;
+	margin-right: 15px; */
+    margin: auto;
+    transition: 2s;
+}
+body > main
+{
+    padding: 2rem .2rem .2rem .2rem;
+    background-color:var(--mainColor);
+    /* min-height: 100vh; */
+    /* box-shadow: 1rem 1rem 1rem var(--mainColor) inset,-1rem -0.5rem 1rem var(--mainColor) inset; */
+    border-radius: 1rem;
+
+}
+body >main > header
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+body >main header section 
+{
+    width: 48%;
+    padding-bottom: 1.5rem;
+    transition: 2s;
+}
+body >main header section:first-child
+{
+    background-color:var(--secandColor);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 2px 2px 3px var(--mainColor),-2px -2px 2px var(--mainColor);
+} 
+main header section:first-child h3 i.mr:first-child 
+{
+        margin: 2rem .8rem 2rem .8rem;
+
+}
+main header section:first-child h3 i:first-child
+{
+    margin-top: .7rem;
+    font-size: 40px;
+    color: var(--mainColor);
+}
+main header section h3:nth-child(2)
+{
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    color: var(--mainColor);
+}
+form
+{
+    text-align: center;
+}
+main header section input:first-child,main header section input:nth-child(2)
+{
+    width: 90%;
+    padding: .5rem;
+    margin:0 .2rem 1.2rem ;
+    height: 2.2rem;
+    border-radius: .8rem;
+    border: thin solid var(--grayColor);
+    font-size: 1rem;
+    box-shadow: 3px 3px 2px var(--graybold);
+}
+main header section input::placeholder
+{
+    font-size: .8rem;
+}
+main form label 
+{
+    position: relative;
+}
+.hide1
+{
+    display: none;
+}
+.hide
+{
+    visibility: hidden;
+}
+.show
+{
+    visibility:visible;
+}
+main form > label i#correct
+{
+    position: absolute;
+   left: 85%;
+   top: 20%;
+   color: green;
+}
+main form label i
+{
+   position: absolute;
+   left: 85%;
+   top: 60%;
+   cursor: pointer;
+}
+main form > label i#correct2
+{
+   position: absolute;
+   left: 85%;
+   top: 20%;
+   color: green;
+}
+
+header section article form div + a 
+{
+    float: left;
+    display: block;
+    font-size: .7rem;
+    color: var(--mainColor);
+    margin: .4rem 0rem 1.5rem 1.5rem;
+}
+.clear
+{
+    clear: both;
+    display: block;
+}
+header section article form header
+{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .8rem;
+}
+header section article form header a
+{
+    display: inline-block;
+    margin-right: .2rem;
+}
+main header section input:nth-child(3)
+{
+    float: right;
+    display: block;
+    margin-top: .44rem;
+    margin-right: 1.1rem;
+    cursor: pointer;
+}
+
+header section article button i
+{
+    margin-left: 2rem;
+    margin-right: 0;
+    font-size: 1.1rem;
+}
+form p 
+{
+    font-size: .8rem;
+
+}
+body >main header section:nth-child(2)
+{
+    border-radius:0 1rem 1rem 0;
+    background-color: var(--mainColor);
+    box-shadow: 1px 1px 2px var(--mainColor), 0 -1px 2px var(--mainColor);
+    background-image: url("../1.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+
+}
+body>main section:nth-child(2) h2
+{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 50%;
+    color: var(--secandColor);
+}
+aside.container
+{
+    background-color: var(--mainColor);
+    
+    min-width: 100%;
+    min-height: 100%;
+}
+.content
+{
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    background-color: var(--grayColor);
+    border-radius: 2rem;
+
+}
+.content h3
+{
+    color: var(--mainColor);
+    font-size: 2.5rem;
+}
+.content input
+{
+    width: 80%;
+    padding: .5rem;
+    margin:1rem .2rem 1.2rem ;
+    height: 2.7rem;
+    border-radius: .8rem;
+    border: thin solid var(--grayColor);
+    font-size: 1rem;
+    box-shadow: 3px 3px 2px var(--graybold);
+}
+.content input::placeholder
+{
+    font-size: 1rem;
+}
+.content label
+{
+    position: relative;
+}
+.content label i
+{
+    position: absolute;
+    cursor: pointer;
+    top: 20%;
+    right: 5%;
+}
+
+  body>div.alert
+  {
+    padding: 1.2rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(226, 12, 12);
+    width: 50%;
+    margin: auto;
+    font-size: 1rem;
+    color: white;
+    border-left: 5px solid yellow;
+    position: absolute;
+    top: 13%;
+    left: 36%;
+    z-index: 1;
+  }
+  body>div.alert i{
+    color: yellow;
+    cursor: pointer;
+  }
+  body>div.alert i:hover
+  {
+    font-size: 1.5rem;
+    transition: 1s;
+  }
+  div#alertPostion
+  {
+    font-size: .8rem;
+    top: 30%;
+    left: 25%;
+  }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+	.container 
+{
+	width: 100%;
+    margin: auto;
+}
+    body >main header section 
+{
+    width: 42%;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    transition: 2s;
+}
+main header section input:first-child,main header section input:nth-child(2)
+{
+    width: 80%;
+    transition: 1s;
+}
+main header section input:nth-child(3)
+{
+    margin-right: 2.5rem;
+    transition: 1s;
+}
+header section article form div + a 
+{ 
+    margin: .4rem 0rem 1.5rem 2.8rem;
+}
+header section article form header
+{
+    padding-left: 1.5rem;
+    padding-right: .5rem;
+}
+header section article form header a
+{
+    margin-right: 1rem;
+}
+body>div.alert
+  {
+    width: 40%;
+    top: 13%;
+    left: 40%;
+  }
+  div#alertPostion
+  {
+    
+    left: 30%;
+  }
+  
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+.container
+{
+    width: 90%;
+}
+.btn
+{
+    width: 80%;
+    font-size: 1.5rem;
+}
+body >main header section 
+{
+    width: 40%;
+    
+}
+main header section:first-child h3 i:first-child
+{
+    font-size: 60px;
+}
+main header section h3:nth-child(2)
+{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+main header section input:first-child,main header section input:nth-child(2)
+{
+    width: 80%;
+    padding: .8rem;
+    margin:0 .3rem 1.6rem ;
+    height: 2.4rem;
+    font-size: .95rem;
+}
+main header section input::placeholder
+{
+    font-size: 1rem;
+}
+main header section input.sin
+{
+    margin-bottom: 1.25rem;
+}
+main form label i
+{
+   position: absolute;
+   left: 85%;
+   top: 55%;
+}
+header section article form div + a 
+{   
+    margin: -.3rem 0 1.5rem 3.5rem;
+}
+header section article form header.mr
+{
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+}
+header section article form header
+{
+    margin-bottom: .5rem;
+}
+header section article form header a.sin i
+{
+    font-size: 1.1rem;
+}
+header section article form header i
+{
+    font-size: 1.2rem;
+    padding: .2rem;
+}
+main header section input:nth-child(3)
+{
+    margin-right: 3.5rem;
+    margin-top: -.2rem;
+}
+header section article button i
+{
+    margin-left: 2.5rem;
+    margin-right: 0;
+    font-size: 1.1rem;
+}
+form p 
+{
+    font-size: .9rem;
+}
+body>main section:nth-child(2) h2
+{
+    font-size: 3rem;
+}
+body>div.alert
+  {
+    width: 30%;
+  }
+  div#alertPostion
+  {
+    left: 35%;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+.container 
+{
+    width: 95%;
+}
+.btn
+{
+    width: 80%;
+    font-size: 1.5rem;
+}
+body >main header section 
+{
+    width: 37%;
+    /* padding-top: 1rem; */
+}
+main header section:first-child h3 i.mr:first-child
+{
+    font-size: 80px;
+}
+main header section:first-child h3 i:first-child
+{
+    font-size: 60px;
+}
+
+main header section h3.sin:nth-child(2)
+{
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+}
+
+main header section input:first-child,main header section input:nth-child(2)
+{
+    width: 75%;
+}
+main header section input::placeholder
+{
+    font-size: 1.2rem;
+}
+main header section input:nth-child(3)
+{
+    margin-right: 3rem;
+}
+header section article form header
+{
+    margin-bottom: 1.5rem;
+}
+header section article form header i
+{
+    font-size: 1.5rem;
+    padding: .2rem;
+}
+form p 
+{
+    font-size: 1rem;
+}
+
+body>main section:nth-child(2) h2
+{
+    font-size: 3rem;
+}
+button.sin
+{
+    font-size: 1.5rem;
+    margin-top: -.5rem;
+}
+.btn
+{
+    width: 70%;
+    font-size: 1.8rem;
+}
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+.container 
+{
+    width: 90%;
+}
+
+body >main header section 
+{
+    width: 38%;
+}
+main header section input:nth-child(3)
+{
+    margin-right: 3.8rem;
+}
+header section article form div + a 
+{  
+    margin-left: 4rem; 
+}
+.btn
+{
+    width: 65%;
+    font-size: 1.8rem;
+}
+}
